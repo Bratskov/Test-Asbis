@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./slider/simple-adaptive-slider.min.css" />
     <script defer src="./slider/simple-adaptive-slider.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
     <title>Тестовое</title>
   </head>
   <body>
@@ -32,14 +31,14 @@
     </header>
 
     <section class="slider">
-      <div class="slider__filter filter">
-        <button class="filter__btn">Для всех</button>
-        <button class="filter__btn">Для него</button>
-        <button class="filter__btn">Для неё</button>
+      <div class="slider__filter">
+        <button class="slider__filter-btn active" id="all">Для всех</button>
+        <button class="slider__filter-btn" id="his">Для него</button>
+        <button class="slider__filter-btn" id="her">Для неё</button>
       </div>
       <div class="slider__wrapper">
         <div class="slider__items">
-          <div class="slider__item">
+          <div class="slider__item slider__item-his">
             <div class="slider__item-test">
               <img
                 class="slider__item-image"
@@ -105,7 +104,7 @@
               </div>
             </div>
           </div>
-          <div class="slider__item">
+          <div class="slider__item slider__item-her">
             <div class="slider__item-test">
               <img
                 class="slider__item-image"
@@ -365,5 +364,6 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
